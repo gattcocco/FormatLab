@@ -10,53 +10,28 @@ body {
 }
 
 .container {
-  display: flex;
-  gap: 20px; /* spazio tra i pulsanti */
+  text-align: center;
 }
 
 .fichi-button {
+  background-color: #6c63ff;
   color: #fff;
   border: none;
-  padding: 15px 25px;
-  font-size: 16px;
-  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 50px;
   cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Tipi di pulsanti */
-.fichi-button.primary {
-  background-color: #6c63ff;
-}
-.fichi-button.primary:hover {
+.fichi-button:hover {
   background-color: #5a54d1;
+  box-shadow: 0 15px 20px rgba(92, 84, 255, 0.4);
+  transform: translateY(-3px);
 }
 
-.fichi-button.secondary {
-  background-color: #7f8c8d;
-}
-.fichi-button.secondary:hover {
-  background-color: #626e70;
-}
-
-.fichi-button.success {
-  background-color: #27ae60;
-}
-.fichi-button.success:hover {
-  background-color: #1e8449;
-}
-
-.fichi-button.warning {
-  background-color: #f39c12;
-}
-.fichi-button.warning:hover {
-  background-color: #d68910;
-}
-
-.fichi-button.danger {
-  background-color: #e74c3c;
-}
-.fichi-button.danger:hover {
-  background-color: #c0392b;
+.fichi-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(92, 84, 255, 0.2);
 }
